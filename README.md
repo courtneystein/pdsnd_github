@@ -1,25 +1,27 @@
-Date Created: Monday, 07/15/2019
+Date Created: Tuesday, 07/16/2019
 
-Project Title: Python and filter()
+Project Title: Python and Def Keyword
 
 Project Description:
 
 According to python.org, "Python is a programming language that lets you work more quickly and integrate
-your systems more effectively." Python has multipe functions to execute with one of them being a filter.
-filter() is a built-in function that "construct[s] an iterator from those elements of iterable for which
-function returns true" (https://docs.python.org/3/library/functions.html#filter). For the Python Bikeshare
-Project, a filter was applied so the user gained an interactive experience based on his or her answer to
-the questions; for instance, selecting a specific city and month from a list of options would result in a
-set of statistics related to that selection.
+your systems more effectively." Python has "two basic types of functions: built-in and user defined. The
+user defined functions are...created with the def keyword. A function is created with the def keyword, is
+followed by the function name, [and] the indented statements form a body of the function"
+(http://zetcode.com/lang/python/functions/). For the Python Bikeshare Project, the def keyword was applied
+in order to provide statistics applicable to certain data ranges; for instance, the most common date and
+time for when someone uses a bikeshare program (def time_stats(df)), or the most commonly used bikeshare
+station (def station_stats(df)).
 
 Files Used:
 
 To install Python, the most recent (and past versions) are available via python.org with instructions pro-
 vided for easy step-by-step instructions. Files used for this particular portion of the Bikeshare Project
 were three datasets available via .csv file: chicago, new_york_city, and washington. These files were down-
-loaded directly from Udacity with the links provided in the project sub-lessons (Chicago Dataset- https://
-www.divvybikes.com/system-data; NYC Dataset-https://www.citibikenyc.com/system-data; DC Dataset- https://
-www.capitalbikeshare.com/system-data).
+loaded directly from Udacity with the links provided in the project sub-lessons, so anyone enrolled in the
+programming course can access them (Chicago Dataset- https://www.divvybikes.com/system-data; NYC Dataset-
+https://www.citibikenyc.com/system-data; DC Dataset- https://www.capitalbikeshare.com/system-data).
+
 
 Additionally, Pandas and NumPy were imported in order to provide an open-sourced library and scientific
 computing package needed to complete the project. Per pandas.pydata.org, "the easiest way to install pandas
