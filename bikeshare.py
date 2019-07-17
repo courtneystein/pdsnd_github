@@ -31,7 +31,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-	    month = input('Would you like to see data for January, February, March, April, May, June or all?\n').lower()
+	    month = input('Would you like to see data for January, February, March, April, May, June or all months?\n').lower()
 		try:
 		    months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 			if month not in months:
@@ -44,7 +44,7 @@ def get_filters():
 				
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-	    day = input('Would you like to see data for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday or all?\n').lower()
+	    day = input('Would you like to see data for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday or all months?\n').lower()
 		try:
 		    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 			if day not in days:
@@ -187,7 +187,7 @@ def main():
         user_stats(df)
         	
 		try:
-		    raw_data_display = input('\nWould you like to display records of raw data? Enter yes or no.\n').value_counts(bins=5)
+		    raw_data_display = input('\nWould you like to see five lines of the original data? Please enter yes or no.\n').value_counts(bins=5)
 		    if raw_data_display.lower() = 'yes':
 			print(df)
 		    continue
