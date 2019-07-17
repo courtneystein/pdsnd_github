@@ -163,9 +163,14 @@ def user_stats(df):
 	print('The types and count of users are ', user_types)
 
     # TO DO: Display counts of gender
-    df = pd.read_csv('chicago.csv', 'new_york_city.csv')
+    df = pd.read_csv('chicago.csv', 'new_york_city.csv')	
 	gender_type = df['Gender'].value_counts()
-	print(df.sort_values(by=['Gender'], inplace=False))
+	
+	if 'Gender' in df.columns:
+	    print(df.sort_values(by=['Gender'])
+		
+	else:
+		print(inplace=False)
 
     # TO DO: Display earliest, most recent, and most common year of birth
 	df = pd.read_csv('chicago.csv', 'new_york_city.csv')
